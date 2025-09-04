@@ -63,6 +63,7 @@ figure img{
     width: 100%;
     height: auto;
     display: block;
+    background-color: var(--Purple-500);
 }
 
 
@@ -109,14 +110,21 @@ p{
         flex-direction: column;
         justify-content: center;
         padding-left: 4rem;
-        padding-right: 12rem;
         flex: 1;
     }
     figure {
         order: 2; /* Moves image to the right side */
         border-radius: 0 0.5rem 0.5rem 0 ;
         flex: 1;
+        display: flex;
 
+    }
+    figure img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+       
     }
     ul{
         display: flex;
